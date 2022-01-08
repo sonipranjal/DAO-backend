@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --experimental-modules --es-module-specifier-resolution=node src/index.js"
+    "dev": "nodemon --experimental-modules --es-module-specifier-resolution=node src/index.js",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node src/index.js"
   },
   "repository": {
     "type": "git",

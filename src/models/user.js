@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import { v4 as uuidv4 } from 'uuid';
 const { Schema } = mongoose;
 
 const userSchema = new Schema(
@@ -22,11 +23,13 @@ const userSchema = new Schema(
       type: String,
       unique: true,
       required: false,
+      default: uuidv4(),
     },
     discord_username: {
       type: String,
       unique: true,
       required: false,
+      default: uuidv4(),
     },
     about: {
       type: String,
